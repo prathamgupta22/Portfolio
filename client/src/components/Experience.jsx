@@ -7,6 +7,7 @@ import nextjs from "../assets/nextjs.png";
 import graphql from "../assets/graphql.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
+import java from "../assets/java.png";
 
 const Experience = () => {
   const techs = [
@@ -30,30 +31,36 @@ const Experience = () => {
     },
     {
       id: 4,
+      src: java,
+      title: "Java",
+      style: "shadow-red-700",
+    },
+    {
+      id: 5,
       src: reactImage,
       title: "React",
       style: "shadow-blue-600",
     },
     {
-      id: 5,
+      id: 6,
       src: tailwind,
       title: "Tailwind",
       style: "shadow-sky-400",
     },
     {
-      id: 6,
+      id: 7,
       src: nextjs,
       title: "Next JS",
       style: "shadow-white",
     },
     {
-      id: 7,
+      id: 8,
       src: graphql,
-      title: "GraphQL",
-      style: "shadow-pink-400",
+      title: "MongoDB",
+      style: "shadow-green-400",
     },
     {
-      id: 8,
+      id: 9,
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
@@ -62,7 +69,7 @@ const Experience = () => {
 
   return (
     <div
-      name="experience"
+      name="skills"
       className="bg-gradient-to-b from-gray-800 to-black w-full h-screen"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
@@ -79,7 +86,11 @@ const Experience = () => {
               key={id}
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
-              <img src={src} alt="" className="w-20 mx-auto" />
+              <img
+                src={src}
+                alt=""
+                className={`w-20 mx-auto ${id === 4 ? "w-32" : ""}`}
+              />
               <p className="mt-4">{title}</p>
             </div>
           ))}

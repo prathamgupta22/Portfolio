@@ -20,9 +20,10 @@ const Home = () => {
             I'm a Full Stack Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-            I am a computer science graduate , passionate about building
-            products Currently, I love to work on web application using
-            technologies like React , Nodejs , Tailwind and MongoDB.
+            Hello! My name is Pratham , and I am a passionate web developer
+            dedicated to crafting elegant and dynamic website Currently, I love
+            to work on web application using technologies like React , Nodejs ,
+            TailwindCSS and MongoDB.
           </p>
           <div>
             <Link
@@ -32,7 +33,7 @@ const Home = () => {
               className="group text-white w-fit px-6 py-3 my-2 flex items-center
             rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
             >
-              Portfolio
+              Projects
               <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
               </span>
@@ -45,7 +46,7 @@ const Home = () => {
             alt="my profile"
             className="rounded-2xl mx-auto w-2/3 md:w-full lg:w-44 xl:max-w-full"
             style={{
-              width: "35vh",
+              width: "30vh",
               "@media (min-width: 1024px)": {
                 width: "100%",
               },

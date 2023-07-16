@@ -14,23 +14,37 @@ const About = () => {
         </div>
 
         <p className="text-xl mt-20">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius,
-          deserunt illum mollitia officiis qui exercitationem perferendis neque
-          quasi a recusandae necessitatibus tempora iusto! Blanditiis error
-          iste, totam fugiat recusandae rerum laborum perferendis molestiae
-          aperiam asperiores nemo. Magni dolor maxime debitis vitae, eaque hic
-          ab mollitia voluptatibus, a nostrum eveniet laborum!
+          i am a Computer Science student with strong willingness to exhibit
+          proficiency in solving problems with my coding skills. First and
+          foremost, I love writing code. Since my first program to print "Hello
+          World" to produce the desired output for problems, I have been
+          obsessed with the thought of solving practical problems using
+          software. Software Engineering is one of the puzzles that has no end,
+          where my interest comes. Each day solving one problem and the next day
+          another problem comes, that makes me engage passionately.
         </p>
 
         <br />
 
         <p className="text-xl">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-          pariatur, vel similique sint, nobis aspernatur ut praesentium
-          explicabo ipsam aliquid quasi laboriosam et culpa possimus repudiandae
-          quisquam ullam maiores ab unde. Fugiat odio mollitia nemo alias.
-          Commodi facilis atque nulla vero voluptatem explicabo. Quibusdam,
-          magni quo! Eum cupiditate debitis labore.
+          I am a Fourth-year undergraduate pursuing a B.Tech degree from GGITS
+          JABALPUR, I am committed to developing my skills and knowledge in the
+          field of engineering. I have good programming skills with good command
+          on data structures and algorithms Through my academic and
+          extracurricular experiences, I have developed strong problem-solving,
+          analytical thinking, and programming skills. I am also proficient in
+          Java, MERN stack, and a decent knowledge of core computer science
+          subjects .
+        </p>
+        <br />
+        <p className="text-xl">
+          I am constantly seeking opportunities to apply and expand my technical
+          abilities. Looking to the future, I am excited to explore career
+          opportunities in IT, and I am eager to connect with professionals in
+          the industry to learn from their experiences and insights an convert
+          my theoritical skill to practical projects, Please feel free to reach
+          out to me if you would like to discuss potential opportunities or
+          share advice.
         </p>
       </div>
     </div>

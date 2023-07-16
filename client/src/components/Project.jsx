@@ -1,36 +1,48 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import ChatEase from "../assets/portfolio/ChatEase.jpg";
+import DRUMKIT from "../assets/portfolio/DRUMKIT.jpg";
+import Ecommerce from "../assets/portfolio/Ecommerce.jpg";
+import MovieMagic from "../assets/portfolio/MovieMagic.jpg";
+import ZOMATO from "../assets/portfolio/ZOMATO.jpg";
+import PORTFOLIO from "../assets/portfolio/PORTFOLIO.jpg";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: ChatEase,
+      demoLink: "https://chatbase-fknt.onrender.com",
+      codeLink: "https://github.com/prathamgupta22/ChatEase",
     },
     {
       id: 2,
-      src: reactParallax,
+      src: MovieMagic,
+      demoLink: "https://example.com/demo1",
+      codeLink: "https://github.com/prathamgupta22/Movie-Magic",
     },
     {
       id: 3,
-      src: navbar,
+      src: Ecommerce,
+      demoLink: "https://example.com/demo1",
+      codeLink: "https://github.com/prathamgupta22/EazyBuy",
     },
     {
       id: 4,
-      src: reactSmooth,
+      src: ZOMATO,
+      demoLink: "https://zomato22.netlify.app",
+      codeLink: "https://github.com/prathamgupta22/zomato-landing-page-22",
     },
     {
       id: 5,
-      src: installNode,
+      src: DRUMKIT,
+      demoLink: "https://majestic-kulfi-34f5b3.netlify.app",
+      codeLink: "https://github.com/prathamgupta22/DRUMm",
     },
     {
       id: 6,
-      src: reactWeather,
+      src: PORTFOLIO,
+      demoLink: "https://example.com/demo1",
+      codeLink: "https://github.com/prathamgupta22/Portfolio",
     },
   ];
 
@@ -48,7 +60,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src, demoLink, codeLink }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -56,12 +68,22 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <a
+                  href={demoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                >
                   Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                </a>
+                <a
+                  href={codeLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                >
                   Code
-                </button>
+                </a>
               </div>
             </div>
           ))}
